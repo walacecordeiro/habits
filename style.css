@@ -18,19 +18,15 @@ body {
     color: white;
 }
 
-.container{
-    width: 95%;
-    max-width: 120rem;
-    margin: auto;
-}
-
 header {
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-between;
 
-    padding: 4.8rem 0;
+    position: fixed;
+    width: 100%;
+    background-color: #09090A;
+    padding: 4.8rem;
 }
 
 header button {
@@ -50,6 +46,8 @@ header button {
 
 #form-habits{
     display: flex;
+    padding: 18.2rem 4.8rem 4.8rem;
+    width: fit-content;
 }
 
 .habits{
@@ -104,4 +102,10 @@ input{
 
 input:checked{
     background: #8B5CF6;
+}
+
+@media (max-width: 35.625em){
+    header button div{
+        display: none;
+    }
 }
